@@ -5,19 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your E-Commerce App</title>
-    <link rel="stylesheet" href="{% static 'e_app/css/home.css' %}">
-    <!-- You can include additional CSS and JS files here -->
-</head>
-<body>
-    <header>
-        <h1>Welcome to Your E-Commerce Website</h1>
-    </header>
+    <link rel="stylesheet" href="{% static 'e_app/css/about.css' %}">
     <nav>
         <ul>
             <li><a href="{% url 'e_app:home' %}">Home</a></li>
             <li><a href="{% url 'e_app:about' %}">About Us</a></li>
         </ul>
     </nav>
+</head>
+<body>
+    <header>
+        <h1>About Us </h1>
+    </header>
+   
     <main>
         {% block content %}
         <!-- The content specific to this template will go here -->
@@ -27,6 +27,5 @@
         <p>&copy; {{ year }} Your E-Commerce App. All rights reserved.</p>
     </footer>
     <script src="{% static 'e_app/js/app_scripts.js' %}"></script>
-    <!-- You can include additional scripts here -->
 </body>
 </html>
