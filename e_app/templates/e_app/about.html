@@ -10,6 +10,7 @@
         <ul>
             <li><a href="{% url 'e_app:home' %}">Home</a></li>
             <li><a href="{% url 'e_app:about' %}">About Us</a></li>
+            <li><a href="{% url 'e_app:contact' %}">Contact Us</a></li>
         </ul>
     </nav>
 </head>
@@ -24,7 +25,7 @@
         {% endblock %}
     </main>
     <footer>
-        <p>&copy; {{ year }} Your E-Commerce App. All rights reserved.</p>
+        <p>&copy; {{ year }} Shoponline. All rights reserved.</p>
     </footer>
     <script src="{% static 'e_app/js/app_scripts.js' %}"></script>
 </body>

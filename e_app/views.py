@@ -5,3 +5,5 @@ def home_view(request):
 
 def about_view(request):
     return render(request, 'e_app/about.html')
+def contact_view(request):
+    return render(request, 'e_app/contact.html')
