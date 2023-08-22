@@ -8,10 +8,11 @@ urlpatterns = [
     path('orders/', include('orders.urls', namespace='orders')),
     path('cart/', include('cart.urls', namespace='cart')),
     path('products/', include('products.urls', namespace='products')),
-    path('/', include('e_app.urls', namespace='e_app')),
+    path('', include('e_app.urls', namespace='e_app')),
     path('payment/', include('payment.urls', namespace='payment')),
     # Other project-level URLs
 ]
+
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL,
                           document_root=settings.MEDIA_ROOT)
